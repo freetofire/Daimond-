@@ -792,7 +792,7 @@ setPersistence(auth, browserLocalPersistence)
             referralCodeEl.textContent = userData.referralCode || '...';
             document.getElementById('share-referral-code').textContent = userData.referralCode || '...';
             minWithdrawalInfoEl.textContent = `${appConfig.minWithdrawal || 10000}`;
-            coinValueInfoEl.textContent = `${appConfig.coinValueCoins || 500} Coins = 💎${appConfig.coinValueInr || 200 ডায়মন্ড}`;
+            coinValueInfoEl.textContent = `${appConfig.coinValueCoins || 500} Coins = 💎${appConfig.coinValueInr || 200}`;
             
             withdrawMethodSelect.innerHTML = '';
             (appConfig.paymentMethods || []).forEach(method => {
