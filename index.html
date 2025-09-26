@@ -816,7 +816,7 @@ setPersistence(auth, browserLocalPersistence)
 
         function updateDynamicPaymentFields() {
             const selectedMethod = withdrawMethodSelect.value.toLowerCase();
-            let placeholder = "Enter Details";
+            let placeholder = "Enter FF Uid";
             if (selectedMethod.includes('upi')) placeholder = "Enter your UPI ID";
             if (selectedMethod.includes('bkash')) placeholder = "Enter your bKash Number";
             paymentDetailsContainer.innerHTML = `<input id="payment-detail-input" type="text" placeholder="${placeholder}" class="w-full p-4 rounded-lg input-field">`;
